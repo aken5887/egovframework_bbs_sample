@@ -1,0 +1,4 @@
+ <link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/sample.css'/>"/>
+<script>
+	alert("aa");
+</script>

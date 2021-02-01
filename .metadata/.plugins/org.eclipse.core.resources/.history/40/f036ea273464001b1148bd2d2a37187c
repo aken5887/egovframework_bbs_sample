@@ -1,0 +1,57 @@
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ include file="/WEB-INF/jsp/egovframework/common.jsp" %>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>상세</title>
+    <script type="text/javaScript">     
+        /* 글 상세 화면 function */
+           function fn_egov_selectList() {
+           	document.detailForm.action = "<c:url value='/egovSampleList.do'/>";
+           	document.detailForm.submit();
+        }
+    </script>
+</head>
+<body>
+  <form name="detailForm" method="post">
+   <input name="selectedId" type="hidden" value=""/>
+   <div class="wrap">
+   		<div class="pageTitle">
+		<div class="contentWrap">
+			<h1><span>Sample Detail</span></h1>
+			<div class="currentPage">
+				<ol>
+					<li>Home</li>
+					<li>Sample List</li>
+				</ol>
+			</div>
+		</div>
+		</div>
+		<div class="contentWrap">	
+			<div class="commonBoardFooter">
+				<div class="btnSet text-right">
+					<button type="button" class="btn btn-gray"onclick="javascript:fn_egov_selectList()">목록</button>
+				</div>
+			</div>
+			<div class="boardList_regular marginTop10">
+				<div class="tatalCount marginBottom10">Total : 총갯수  ${paginationInfo.totalRecordCount }건</div>
+					<div class="table">          
+						<table id="chk-table"> 
+							<caption class="bodo_hidden">샘플</caption>
+						<colgroup>
+							<col width="30%">
+							<col width="70%">
+						</colgroup>
+							<tr>
+								<th>NAME</th>
+								<td>${sampleVO.name }</td>
+							</tr>
+						</table>			
+					</div>
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+</body>
+</html>

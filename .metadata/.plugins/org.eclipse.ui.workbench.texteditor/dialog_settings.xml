@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="isRegEx"/>
+		<item value="BeanValidator" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="beanValidator"/>
+			<item value="propertiesService"/>
+			<item value="selectSample"/>
+			<item value="&#x09;&lt;col width=&quot;*&quot;&gt;"/>
+			<item value="https://gnews.gg.go.kr"/>
+			<item value="egovSampleList.do"/>
+			<item value="welcome-page"/>
+			<item value="8080"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+</section>

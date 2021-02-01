@@ -1,0 +1,11 @@
+package egovframework.example.sample.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import egovframework.example.sample.service.ArdentSampleService;
+import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
+
+@Service
+public class ArdentSampleServiceImpl extends EgovAbstractServiceImpl implements ArdentSampleService{
+
+}
